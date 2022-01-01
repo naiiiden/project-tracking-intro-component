@@ -6,11 +6,16 @@
           box-sizing: border-box;
   font-size: 18px;
   font-family: Barlow, sans-serif;
+  position: relative;
 }
 
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
+}
+
+a {
+  cursor: pointer;
 }
 
 .attribution {
@@ -20,5 +25,108 @@ body {
 
 .attribution a {
   color: #3e52a3;
+}
+
+@media screen and (max-width: 1023px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 1rem;
+  }
+  header .hamburger {
+    border: none;
+    background: transparent;
+  }
+  header nav {
+    width: 100%;
+  }
+  header nav .nav-ul {
+    background: #fff;
+    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    list-style-type: none;
+    z-index: 1;
+    top: -100rem;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  header nav .nav-ul.show {
+    top: 1rem;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  header nav .nav-ul a {
+    text-decoration: none;
+    font-family: Barlow Condensed;
+    font-weight: 700;
+    color: #242942;
+  }
+  header nav .nav-ul .login {
+    border-top: 1px solid #a0a1ac;
+    width: 80%;
+    padding-top: 1rem;
+    text-align: center;
+    color: #a0a1ac;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3.5rem 7rem;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+  }
+  header nav .nav-ul a {
+    text-decoration: none;
+    font-family: Barlow Condensed;
+    font-weight: 700;
+    color: #242942;
+  }
+  header nav .nav-ul a:hover {
+    text-decoration: underline;
+  }
+  header nav .nav-ul .login {
+    list-style-type: disc;
+    color: #a0a1ac;
+    margin-left: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

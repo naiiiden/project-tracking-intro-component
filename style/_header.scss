@@ -1,0 +1,92 @@
+@media screen and (max-width: 1023px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem;
+    
+        .hamburger {
+            border: none;
+            background: transparent;
+        }
+
+        nav {
+            width: 100%;
+
+            .nav-ul {
+                background: #fff;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+                list-style-type: none;
+                z-index: 1;
+                top: -100rem;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                gap: 1rem;
+                padding: 1rem 0;
+                
+                    &.show {
+                    top: 1rem;
+                    transition: 0.3s ease;
+                }
+                
+                a {
+                    text-decoration: none;
+                    font-family: Barlow Condensed;
+                    font-weight: 700;
+                    color: $very-dark-blue;
+                }
+
+                .login {
+                    border-top: 1px solid $grayish-blue;
+                    width: 80%;
+                    padding-top: 1rem;
+                    text-align: center;
+                    color: $grayish-blue;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 3.5rem 7rem;
+
+        .hamburger {
+            display: none;
+        }
+
+        nav {
+            .nav-ul {
+                display: flex;
+                gap: 2rem;
+
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    font-family: Barlow Condensed;
+                    font-weight: 700;
+                    color: $very-dark-blue;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                
+                .login {
+                    list-style-type: disc;
+                    color: $grayish-blue;
+                    margin-left: 1rem;
+                }
+            }
+        }
+    }
+}
