@@ -135,9 +135,15 @@ img {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  a {
+    font-size: 1.5rem;
+  }
+}
+
 .gray_bg {
   background: #eef3f6;
-  border-bottom-left-radius: 25%;
+  border-bottom-left-radius: 5rem;
   padding: 0;
   width: 50%;
   height: 50vh;
@@ -145,5 +151,172 @@ img {
   right: 0;
   top: 0;
   z-index: -1;
+}
+
+.text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+.text small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+  color: #a0a1ac;
+  font-size: .8rem;
+}
+
+.text small span {
+  background: #242942;
+  color: #fff;
+  font-weight: 700;
+  padding: .1rem .3rem;
+  border-radius: 10rem;
+  font-size: .8rem;
+}
+
+.text h1 {
+  color: #242942;
+  font-size: 2rem;
+  font-family: Barlow Condensed;
+  font-weight: 700;
+}
+
+.text p {
+  color: #5b5f71;
+}
+
+.text .demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5rem;
+}
+
+.text .demo button {
+  background: #ff5c5c;
+  border: none;
+  border-radius: .25rem;
+  color: #fff;
+  font-family: Barlow Condensed;
+  font-weight: 700;
+  padding: .25rem;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+main .illustration {
+  max-width: 22.5rem;
+  position: relative;
+  left: 3.35rem;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    position: relative;
+    padding: 3rem 7rem;
+    height: 80vh;
+    overflow: hidden;
+  }
+  main .text {
+    margin-right: auto;
+    width: 50%;
+  }
+  main .text h1 {
+    font-size: 2.5rem;
+  }
+  main .illustration {
+    position: absolute;
+    left: 28rem;
+    min-width: 70%;
+    height: 75%;
+  }
+  main button:hover {
+    opacity: 0.7;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .text {
+    width: 40%;
+    gap: 1rem;
+  }
+  main .text small {
+    font-size: 1.25rem;
+  }
+  main .text small span {
+    font-size: 1rem;
+  }
+  main .text h1 {
+    font-size: 3rem;
+  }
+  main .text p {
+    font-size: 1.25rem;
+  }
+  main .illustration {
+    left: 39rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  main .text {
+    width: 35%;
+    gap: 1.5rem;
+  }
+  main .text small {
+    font-size: 1.5rem;
+  }
+  main .text small span {
+    font-size: 1.25rem;
+  }
+  main .text h1 {
+    font-size: 4.5rem;
+  }
+  main .text p {
+    font-size: 1.5rem;
+  }
+  main .text button {
+    font-size: 1.25rem;
+  }
+  main .illustration {
+    left: 64rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

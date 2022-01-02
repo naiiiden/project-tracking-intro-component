@@ -76,6 +76,7 @@
                     font-family: Barlow Condensed;
                     font-weight: 700;
                     color: $very-dark-blue;
+                    
 
                     &:hover {
                         text-decoration: underline;
@@ -89,5 +90,11 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    a {
+        font-size: 1.5rem;
     }
 }
