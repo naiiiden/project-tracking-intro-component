@@ -133,7 +133,7 @@ img {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: hsl(231deg, 7%, 65%);
+  color: #555962;
   font-size: 0.8rem;
 }
 .text small span {
