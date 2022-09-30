@@ -159,7 +159,7 @@ img {
   gap: 0.5rem;
 }
 .text .demo button {
-  background: hsl(0deg, 100%, 68%);
+  background: #E60000;
   border: none;
   border-radius: 0.25rem;
   color: #fff;
