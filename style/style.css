@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 18px;
   font-family: Barlow, sans-serif;
 }
@@ -26,24 +25,16 @@ img {
   font-size: 11px;
   text-align: center;
 }
-
 .attribution a {
-  color: #3e52a3;
+  color: hsl(228deg, 45%, 44%);
 }
 
 @media screen and (max-width: 1023px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1rem;
   }
   header .hamburger {
@@ -55,66 +46,48 @@ img {
   }
   header nav .nav-ul {
     background: #fff;
-    -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     list-style-type: none;
     z-index: 1;
     top: -100%;
     margin: auto;
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     width: 90%;
     gap: 1rem;
     padding: 1rem 0;
   }
   header nav .nav-ul.show {
     top: 3.5rem;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
   header nav .nav-ul a {
     text-decoration: none;
     font-family: Barlow Condensed;
     font-weight: 700;
-    color: #242942;
+    color: hsl(230deg, 29%, 20%);
   }
   header nav .nav-ul .login {
-    border-top: 1px solid #a0a1ac;
+    border-top: 1px solid hsl(231deg, 7%, 65%);
     width: 80%;
     padding-top: 1rem;
     text-align: center;
-    color: #a0a1ac;
+    color: hsl(231deg, 7%, 65%);
   }
 }
-
 @media screen and (min-width: 1024px) {
   header {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     padding: 3.5rem 7rem;
   }
   header .hamburger {
     display: none;
   }
   header nav .nav-ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 2rem;
     list-style-type: none;
@@ -123,26 +96,24 @@ img {
     text-decoration: none;
     font-family: Barlow Condensed;
     font-weight: 700;
-    color: #242942;
+    color: hsl(230deg, 29%, 20%);
   }
   header nav .nav-ul a:hover {
     text-decoration: underline;
   }
   header nav .nav-ul .login {
     list-style-type: disc;
-    color: #a0a1ac;
+    color: hsl(231deg, 7%, 65%);
     margin-left: 1rem;
   }
 }
-
 @media screen and (min-width: 1440px) {
   a {
     font-size: 1.5rem;
   }
 }
-
 .gray_bg {
-  background: #eef3f6;
+  background: hsl(207deg, 33%, 95%);
   border-bottom-left-radius: 5rem;
   padding: 0;
   width: 50%;
@@ -154,88 +125,59 @@ img {
 }
 
 .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: .5rem;
+  flex-direction: column;
+  gap: 0.5rem;
 }
-
 .text small {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .5rem;
-  color: #a0a1ac;
-  font-size: .8rem;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(231deg, 7%, 65%);
+  font-size: 0.8rem;
 }
-
 .text small span {
-  background: #242942;
+  background: hsl(230deg, 29%, 20%);
   color: #fff;
   font-weight: 700;
-  padding: .1rem .3rem;
+  padding: 0.1rem 0.3rem;
   border-radius: 10rem;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
-
 .text h1 {
-  color: #242942;
+  color: hsl(230deg, 29%, 20%);
   font-size: 2rem;
   font-family: Barlow Condensed;
   font-weight: 700;
 }
-
 .text p {
-  color: #5b5f71;
+  color: hsl(230deg, 11%, 40%);
 }
-
 .text .demo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: .5rem;
+  align-items: center;
+  gap: 0.5rem;
 }
-
 .text .demo button {
-  background: #ff5c5c;
+  background: hsl(0deg, 100%, 68%);
   border: none;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
   color: #fff;
   font-family: Barlow Condensed;
   font-weight: 700;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 
 main {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 3rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 1rem;
   position: relative;
   overflow: hidden;
 }
-
 main .illustration {
   max-width: 22.5rem;
   position: relative;
@@ -244,10 +186,7 @@ main .illustration {
 
 @media screen and (min-width: 1024px) {
   main {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    flex-direction: row-reverse;
     position: relative;
     padding: 3rem 7rem;
     height: 80vh;
@@ -268,11 +207,9 @@ main .illustration {
   }
   main button:hover {
     opacity: 0.7;
-    -webkit-transition: 0.3s ease;
     transition: 0.3s ease;
   }
 }
-
 @media screen and (min-width: 1440px) {
   main .text {
     width: 40%;
@@ -294,7 +231,6 @@ main .illustration {
     left: 39rem;
   }
 }
-
 @media screen and (min-width: 1600px) {
   main .text {
     width: 35%;
@@ -318,5 +254,4 @@ main .illustration {
   main .illustration {
     left: 50rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
