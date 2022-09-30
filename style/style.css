@@ -103,7 +103,7 @@ img {
   }
   header nav .nav-ul .login {
     list-style-type: disc;
-    color: hsl(231deg, 7%, 65%);
+    color: #555962;
     margin-left: 1rem;
   }
 }
